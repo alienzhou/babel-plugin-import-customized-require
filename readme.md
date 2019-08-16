@@ -8,12 +8,18 @@ It's a babel plugin to transform the ESM (`import`) syntax to your own call expr
 
 ## Usage
 
+```bash
+git clone git@github.com:alienzhou/babel-plugin-import-customized-require.git
+
+mv babel-plugin-import-customized-require $your_project
+```
+
 It's a standard babel plugin. You can use it in babel-loader with webpack.
 
 ```javascript
 // webpack.config.js
 
-const customRequire = require('babel-plugin-import-customized-require');
+const customRequire = require('./babel-plugin-import-customized-require');
 
 
 module.exports = {
