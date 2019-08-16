@@ -2,11 +2,11 @@
 
 ## Intro
 
-It's a babel plugin to transform the ESM (`import`) syntax to your own call expression (e.g. `__my_require__()`) , in order to passby webpack's compiling.
+It's a babel plugin to transform the ESM (`import`) syntax to your own call expression (e.g. `__my_require__()`) , in order to passby webpack's compiling. As a result, you can intergrate it (e.g. `__my_require__()`) into your own module loaders.
 
 ## Usage
 
-webpack config -> babel plugin
+It's a standard babel plugin. You can use it in babel-loader with webpack.
 
 ```javascript
 // webpack.config.js
@@ -39,9 +39,9 @@ module.exports = {
 }
 ```
 
-## Example
+## Output
 
-Then, source code
+Then, source code (as below)
 
 ```javascript
 import main from 'runtime:main';
