@@ -4,6 +4,8 @@
 
 It's a babel plugin to transform the ESM (`import`) syntax to your own call expression (e.g. `__my_require__()`) , in order to passby webpack's compiling. As a result, you can intergrate it (e.g. `__my_require__()`) into your own module loaders.
 
+![intro](./img/intro.jpg)
+
 ## Usage
 
 It's a standard babel plugin. You can use it in babel-loader with webpack.
